@@ -40,5 +40,24 @@
   }
 
   &__design {
+    background-image: linear-gradient(
+        hsla(0, 0%, 12%, 0.9),
+        hsla(0, 0%, 12%, 0.9)
+      ),
+      url("/src/images/02.AVIF");
+
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2em 0;
+  }
+
+  .title-fs {
+    font-size: clamp(1.383rem, 4vw + 1rem, 5rem);
+    margin-top: 0;
   }
 }
