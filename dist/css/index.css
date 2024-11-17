@@ -7,8 +7,7 @@
 h1,
 h2,
 h3,
-body,
-figure {
+body {
   margin: 0;
 }
 
@@ -61,7 +60,6 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
   font-size: 1.296rem;
 }
 
@@ -72,6 +70,10 @@ strong {
 
 figcaption {
   font-style: italic;
+}
+
+p {
+  margin: 2em 0;
 }
 
 :root {
@@ -114,8 +116,15 @@ figcaption {
   color: var(--clr-light-100);
 }
 
+.l-container {
+  background-color: var(--clr-neutral-700);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 .l-header {
-  background-image: linear-gradient(hsla(0, 0%, 12%, 0.5), hsl(0, 0%, 12%)), url("/src/images/01.AVIF");
+  background-image: linear-gradient(hsla(0, 0%, 12%, 0.6), hsl(0, 0%, 12%)), url("/src/images/01.AVIF");
   background-position: top;
   background-size: cover;
   display: grid;
@@ -127,8 +136,8 @@ figcaption {
 .l-header__title {
   padding: 1em 0;
 }
-.l-header__paragraph {
-  margin: 2em 0;
+.l-header .subtitle-fs {
+  font-size: clamp(1.383rem, 4vw + 1rem, 5rem);
 }
 .l-header__explorer {
   display: none;
@@ -136,6 +145,29 @@ figcaption {
   gap: 1em;
 }
 
+.l-main {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.l-main__title {
+  margin-top: 1em;
+}
+.l-main__perfil {
+  display: grid;
+  grid-template-columns: min(100px, 15%) 1fr;
+  column-gap: 2em;
+  align-items: center;
+  margin: 1em 0;
+}
+.l-main__portrait {
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+}
+.l-main__makingOff {
+  background-color: var(--clr-dark-600);
+}
 .l-wrapper {
   max-width: 1440px;
   margin: 0 auto;

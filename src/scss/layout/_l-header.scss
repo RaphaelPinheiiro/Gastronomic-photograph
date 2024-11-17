@@ -1,7 +1,7 @@
 // Layout Header
 
 .l-header {
-  background-image: linear-gradient(hsla(0, 0%, 12%, 0.5), hsla(0, 0%, 12%, 1)),
+  background-image: linear-gradient(hsla(0, 0%, 12%, 0.6), hsla(0, 0%, 12%, 1)),
     url("/src/images/01.AVIF");
   background-position: top;
   background-size: cover;
@@ -15,8 +15,8 @@
     padding: 1em 0;
   }
 
-  &__paragraph {
-    margin: 2em 0;
+  .subtitle-fs {
+    font-size: clamp(1.383rem, 4vw + 1rem, 5rem);
   }
 
   &__explorer {
