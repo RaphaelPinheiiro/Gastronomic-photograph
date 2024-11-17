@@ -120,6 +120,7 @@ figcaption {
   background-size: cover;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  align-items: center;
   text-align: center;
   min-height: 100vh;
 }
@@ -129,10 +130,6 @@ figcaption {
 .l-header__paragraph {
   margin: 2em 0;
 }
-.l-header__intro {
-  height: 100%;
-  align-content: center;
-}
 .l-header__explorer {
   display: none;
   justify-content: space-between;
@@ -141,9 +138,9 @@ figcaption {
 
 .l-wrapper {
   max-width: 1440px;
-  width: 100%;
   margin: 0 auto;
   padding: 0 2em;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
