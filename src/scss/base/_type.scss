@@ -1,0 +1,31 @@
+// Typograph
+
+body {
+  font-family: "infant";
+  font-style: normal;
+  font-size: 1rem;
+  color: hsl(33, 53%, 80%);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.476rem;
+}
+
+h2 {
+  font-size: 1.383rem;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 1.296rem;
+}
+
+a,
+strong {
+  font-weight: bold;
+}
+
+figcaption {
+  font-style: italic;
+}

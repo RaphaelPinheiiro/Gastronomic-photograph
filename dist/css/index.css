@@ -1,0 +1,149 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+body,
+figure {
+  margin: 0;
+}
+
+menu,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Infant";
+  src: url(/src/fonts/CormorantInfant-Italic-webfont.woff), format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Infant";
+  src: url(/src/fonts/CormorantInfant-Regular-webfont.woff), format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Infant";
+  src: url(/src/fonts/CormorantInfant-Bold-webfont.woff), format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "infant";
+  font-style: normal;
+  font-size: 1rem;
+  color: hsl(33, 53%, 80%);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.476rem;
+}
+
+h2 {
+  font-size: 1.383rem;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 1.296rem;
+}
+
+a,
+strong {
+  font-weight: bold;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+:root {
+  --clr-neutral-100: hsl(0, 0%, 80%);
+  --clr-neutral-200: hsl(0, 0%, 70%);
+  --clr-neutral-300: hsl(0, 0%, 60%);
+  --clr-neutral-400: hsl(0, 0%, 40%);
+  --clr-neutral-500: hsl(0, 0%, 30%);
+  --clr-neutral-600: hsl(0, 0%, 20%);
+  --clr-neutral-700: hsl(0, 0%, 12%);
+  --clr-light-100: hsl(33, 53%, 80%);
+  --clr-light-200: hsl(33, 53%, 70%);
+  --clr-light-300: hsl(33, 53%, 60%);
+  --clr-light-400: hsl(33, 53%, 40%);
+  --clr-light-500: hsl(33, 53%, 30%);
+  --clr-light-600: hsl(33, 53%, 20%);
+  --clr-light-700: hsl(33, 53%, 12%);
+  --clr-dark-100: hsl(69, 19%, 80%);
+  --clr-dark-200: hsl(69, 19%, 70%);
+  --clr-dark-300: hsl(69, 19%, 60%);
+  --clr-dark-400: hsl(69, 19%, 40%);
+  --clr-dark-500: hsl(69, 19%, 30%);
+  --clr-dark-600: hsl(69, 19%, 20%);
+  --clr-dark-700: hsl(69, 19%, 12%);
+}
+
+.c-button {
+  display: inline-block;
+  color: var(--clr-light-100);
+  background-color: var(--clr-light-500);
+  border-radius: 4px;
+  padding: 0.513em 4em;
+}
+
+.c-nav__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.c-nav__link {
+  color: var(--clr-light-100);
+}
+
+.l-header {
+  background-image: linear-gradient(hsla(0, 0%, 12%, 0.5), hsl(0, 0%, 12%)), url("/src/images/01.AVIF");
+  background-position: top;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+  min-height: 100vh;
+}
+.l-header__title {
+  padding: 1em 0;
+}
+.l-header__paragraph {
+  margin: 2em 0;
+}
+.l-header__intro {
+  height: 100%;
+  align-content: center;
+}
+.l-header__explorer {
+  display: none;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.l-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+/*# sourceMappingURL=index.css.map */

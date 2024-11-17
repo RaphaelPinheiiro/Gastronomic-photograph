@@ -1,0 +1,14 @@
+@use "../abstract" as *;
+
+// Navigation
+
+.c-nav {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: var(--clr-light-100);
+  }
+}
