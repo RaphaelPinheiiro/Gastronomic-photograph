@@ -150,6 +150,13 @@ p {
   flex-direction: column;
   text-align: justify;
 }
+.l-main__about {
+  display: grid;
+}
+.l-main__image {
+  display: inline-block;
+  width: 100%;
+}
 .l-main__title {
   margin-top: 1em;
 }
@@ -166,6 +173,7 @@ p {
   width: 100%;
 }
 .l-main__makingOff {
+  display: grid;
   background-color: var(--clr-dark-600);
 }
 .l-wrapper {
