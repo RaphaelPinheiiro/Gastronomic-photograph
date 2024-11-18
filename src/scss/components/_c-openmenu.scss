@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 // Button open menu
 
 .c-openmenu {
@@ -8,4 +10,14 @@
   color: inherit;
   font-size: 2rem;
   padding: 0.1em;
+  transition: $transition-global;
+
+  &:hover,
+  &:focus {
+    color: var(--clr-neutral-700);
+  }
+
+  &:active {
+    color: var(--clr-dark-600);
+  }
 }

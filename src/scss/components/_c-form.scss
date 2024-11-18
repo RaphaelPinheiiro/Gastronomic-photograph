@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 // Contact form
 
 .c-form {
@@ -12,7 +14,15 @@
     font-family: inherit;
     padding: 0.25em 0.5em;
     background-color: var(--clr-neutral-100);
-    border: 2px solid var(--clr-light-500);
+    border: 2px solid var(--clr-dark-600);
     border-radius: 2px;
+    transition: $transition-global;
+
+    &:hover,
+    &:focus {
+      border-color: var(--clr-light-500);
+      box-shadow: 0 0 4px 2px var(--clr-light-300);
+      outline: 3px solid transparent;
+    }
   }
 }
