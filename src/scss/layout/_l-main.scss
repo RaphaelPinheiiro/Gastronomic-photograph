@@ -20,6 +20,11 @@
     margin-top: 1em;
   }
 
+  .title-fs {
+    font-size: clamp(1.383rem, 4vw + 1rem, 5rem);
+    margin-top: 0;
+  }
+
   &__perfil {
     display: grid;
     grid-template-columns: min(100px, 15%) 1fr;
@@ -56,8 +61,11 @@
     padding: 2em 0;
   }
 
-  .title-fs {
-    font-size: clamp(1.383rem, 4vw + 1rem, 5rem);
-    margin-top: 0;
+  &__photograph {
+    background-color: var(--clr-dark-600);
+  }
+
+  .title-margin {
+    margin: 1em 0;
   }
 }
