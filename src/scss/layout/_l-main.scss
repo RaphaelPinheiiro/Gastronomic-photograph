@@ -46,12 +46,12 @@
 
   &__design {
     background-image: linear-gradient(
-        hsla(0, 0%, 12%, 0.9),
-        hsla(0, 0%, 12%, 0.9)
+        hsla(0, 0%, 12%, 0.8),
+        hsla(0, 0%, 12%, 0.8)
       ),
       url("/src/images/02.AVIF");
 
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -65,7 +65,12 @@
     background-color: var(--clr-dark-600);
   }
 
-  .title-margin {
-    margin: 1em 0;
+  &__gallery {
+    text-align: center;
+  }
+
+  &__contact {
+    display: grid;
+    text-align: center;
   }
 }

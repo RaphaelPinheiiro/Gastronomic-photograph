@@ -30,5 +30,7 @@ figcaption {
 }
 
 p {
+  overflow-wrap: break-word;
+  hyphens: auto;
   margin: 2em 0;
 }

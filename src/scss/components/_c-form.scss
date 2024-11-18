@@ -1,0 +1,18 @@
+// Contact form
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1em;
+  padding-bottom: 2em;
+
+  &__input {
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: var(--clr-neutral-100);
+    border: 2px solid var(--clr-light-500);
+    border-radius: 2px;
+  }
+}
