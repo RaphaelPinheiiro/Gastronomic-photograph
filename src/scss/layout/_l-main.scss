@@ -1,4 +1,5 @@
 @use "../abstract" as *;
+@use "../tools" as *;
 
 // Layout Main
 
@@ -9,10 +10,12 @@
 
   &__about {
     display: grid;
+    align-items: center;
   }
 
   &__image {
     display: inline-block;
+    object-fit: cover;
     width: 100%;
   }
 
@@ -42,6 +45,7 @@
   &__makingOff {
     display: grid;
     background-color: var(--clr-dark-600);
+    align-items: center;
   }
 
   &__design {
@@ -72,5 +76,23 @@
   &__contact {
     display: grid;
     text-align: center;
+    row-gap: 2em;
+  }
+
+  // Media queries
+
+  @include breakPoints("small") {
+    &__about,
+    &__makingOff,
+    &__contact {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__image {
+      height: 100%;
+    }
+    .image-order {
+      order: -1;
+    }
   }
 }

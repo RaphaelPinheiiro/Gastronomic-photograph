@@ -1,3 +1,5 @@
+@use "../tools" as *;
+
 // Layout Header
 
 .l-header {
@@ -7,6 +9,7 @@
   background-size: cover;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  row-gap: 2em;
   align-items: center;
   text-align: center;
   min-height: 100vh;
@@ -23,5 +26,13 @@
     display: none;
     justify-content: space-between;
     gap: 1em;
+  }
+
+  // Media queries
+
+  @include breakPoints("small") {
+    &__explorer {
+      display: flex;
+    }
   }
 }
