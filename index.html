@@ -14,16 +14,25 @@
       <div class="l-wrapper l-wrapper-flex">
         <h1 class="l-header__title">Luciano Fagner</h1>
         <button class="c-openmenu">&#9776</button>
-        <!-- <nav class="c-nav">
-          <menu class="c-nav__menu">
-            <li class="c-nav__item"><a href="#" class="c-nav__link">Início</a></li>
-            <li class="c-nav__item"><a href="#" class="c-nav__link">About me</a></li>
-            <li class="c-nav__item"><a href="#" class="c-nav__link">Photograph</a></li>
-            <li class="c-nav__item"><a href="#" class="c-nav__link">Contact us</a></li>
-          </menu>
-        </nav> -->
       </div>
-      <div class="l-wrapper">
+      <div class="l-wrapper l-wrapper-grid">
+        <ul class="c-social">
+          <li class="c-social__item"><a href="#" class="c-social__link"><svg class="c-social__icon"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+              </svg></a></li>
+          <li class="c-social__item"><a href="#" class="c-social__link"><svg class="c-social__icon"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+              </svg></a></li>
+          <li class="c-social__item"><a href="#" class="c-social__link"><svg class="c-social__icon"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
+              </svg></a></li>
+        </ul>
         <article class="l-header__intro">
           <h2 class="l-header__subtitle subtitle-fs">Food Style</h2>
           <p class="l-header__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam deleniti
@@ -50,6 +59,14 @@
         </aside>
       </div>
     </header>
+    <!-- <nav class="c-nav">
+      <menu class="c-nav__menu">
+        <li class="c-nav__item"><a href="#" class="c-nav__link">Inicio</a></li>
+        <li class="c-nav__item"><a href="#" class="c-nav__link">About me</a></li>
+        <li class="c-nav__item"><a href="#" class="c-nav__link">Photograph</a></li>
+        <li class="c-nav__item"><a href="#" class="c-nav__link">Contact us</a></li>
+      </menu>
+    </nav> -->
     <main class="l-main">
       <section class="l-main__about">
         <div class="l-wrapper">
@@ -59,7 +76,8 @@
             <figcaption class="l-main__author">Luciano Fagner</figcaption>
           </figure>
           <p class="l-main__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          <p class="l-main__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ratione sunt
+          <p class="l-main__paragraph paragraph-columns">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+            ratione sunt
             voluptate non perspiciatis. Fugiat, omnis, unde quo aliquam quis incidunt perspiciatis pariatur quidem eius
             illum aspernatur beatae? Laborum, vel! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
             harum, ipsum id blanditiis deleniti sint rem sapiente in esse. Quis iusto accusamus accusantium repellendus
@@ -89,16 +107,10 @@
           <p class="l-main__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum in quos quae
             dolorem sint delectus. Aut nihil obcaecati hic temporibus, molestiae eius architecto. Quod, dolorem.
             Quibusdam
-            iure esse omnis voluptates.</p>
+            iure esse omnis voluptates. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolore
+            laboriosam, sint ratione magni mollitia dolorem ea hic consequatur doloremque eum itaque delectus quibusdam
+            impedit cumque voluptatum placeat, repudiandae vel!</p>
           <a class="c-button" href="#">Button</a>
-        </div>
-      </section>
-      <section class="l-main__photograph">
-        <div class="l-wrapper">
-          <h2 class="l-main__title">Photograph</h2>
-          <p class="l-main__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eaque nihil itaque
-            impedit dolorum libero exercitationem eligendi beatae nobis ea, quod perferendis non autem? Fuga laboriosam
-            eligendi in corporis fugiat.</p>
         </div>
       </section>
       <section class="l-main__gallery">
@@ -126,16 +138,43 @@
               <figcaption class="c-gallery__name">Pastel</figcaption>
             </figure>
             <figure class="c-gallery__card">
-              <img class="c-gallery__view" src="/src/images/08.AVIF" alt="Cake">
-              <figcaption class="c-gallery__name">Cake</figcaption>
+              <img class="c-gallery__view" src="/src/images/08.AVIF" alt="Chocolate cake">
+              <figcaption class="c-gallery__name">Chocolate cake</figcaption>
+            </figure>
+            <figure class="c-gallery__card">
+              <img class="c-gallery__view" src="/src/images/10.AVIF" alt="Strawberry Cake">
+              <figcaption class="c-gallery__name">Strawberry Cake</figcaption>
+            </figure>
+            <figure class="c-gallery__card">
+              <img class="c-gallery__view" src="/src/images/11.AVIF" alt="Risotto">
+              <figcaption class="c-gallery__name">Risotto</figcaption>
+            </figure>
+            <figure class="c-gallery__card">
+              <img class="c-gallery__view" src="/src/images/12.AVIF" alt="Chocolate">
+              <figcaption class="c-gallery__name">Chocolate</figcaption>
+            </figure>
+            <figure class="c-gallery__card">
+              <img class="c-gallery__view" src="/src/images/13.AVIF" alt="Salmon">
+              <figcaption class="c-gallery__name">Salmon</figcaption>
             </figure>
           </div>
         </div>
       </section>
+      <section class="l-main__photograph">
+        <div class="l-wrapper">
+          <h2 class="l-main__title">Photograph</h2>
+          <p class="l-main__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eaque nihil itaque
+            impedit dolorum libero exercitationem eligendi beatae nobis ea, quod perferendis non autem? Fuga laboriosam
+            eligendi in corporis fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat,
+            debitis, aperiam voluptatem minus repudiandae corrupti mollitia quisquam fuga, quasi dolores ab laborum aut
+            nesciunt error aliquam minima vel possimus?</p>
+          <img class="l-main__image image-portrait" src="/src/images/06.AVIF" alt="Luciano Fganer">
+        </div>
+        <img class="l-main__image" src="/src/images/07.AVIF" alt="Pastel">
+      </section>
       <section class="l-main__contact">
         <div class="l-wrapper">
           <h2 class="l-main__title">Contact us</h2>
-          <p class="l-main__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           <form class="c-form" action="">
             <label class="c-form__label" for="fname">First name</label>
             <input class="c-form__input" id="fname" type="text">
@@ -148,7 +187,6 @@
             <button class="c-button" type="submit">Send</button>
           </form>
         </div>
-        <img class="l-main__image" src="/src/images/07.AVIF" alt="Luciano Fagner">
       </section>
     </main>
     <footer class="l-footer">

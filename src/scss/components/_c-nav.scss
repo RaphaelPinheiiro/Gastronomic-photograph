@@ -3,9 +3,18 @@
 // Navigation
 
 .c-nav {
+  background-color: var(--clr-dark-700);
+  position: fixed;
+  width: 25%;
+  height: 100%;
+
   &__menu {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    padding: 3em 1em;
+    height: 100%;
   }
 
   &__link {

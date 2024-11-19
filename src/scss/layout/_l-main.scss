@@ -10,7 +10,6 @@
 
   &__about {
     display: grid;
-    align-items: center;
   }
 
   &__image {
@@ -28,24 +27,43 @@
     margin-top: 0;
   }
 
+  &__paragraph {
+    text-align: justify;
+  }
+
+  &__perfil,
+  &__makingOff,
+  &__design,
+  &__photograph,
+  &__about {
+    align-items: center;
+  }
+
   &__perfil {
     display: grid;
     grid-template-columns: min(100px, 15%) 1fr;
     column-gap: 2em;
-    align-items: center;
     margin: 1em 0;
   }
 
   &__portrait {
     display: inline-block;
-    border-radius: 50%;
     width: 100%;
+  }
+
+  &__portrait,
+  .image-portrait {
+    border-radius: 50%;
+  }
+
+  .image-portrait {
+    width: 30%;
+    margin-bottom: 1em;
   }
 
   &__makingOff {
     display: grid;
     background-color: var(--clr-dark-600);
-    align-items: center;
   }
 
   &__design {
@@ -55,28 +73,29 @@
       ),
       url("/src/images/02.AVIF");
 
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 2em 0;
   }
 
-  &__photograph {
+  &__photograph,
+  &__contact {
     background-color: var(--clr-dark-600);
+    display: grid;
   }
 
-  &__gallery {
+  &__gallery,
+  &__photograph,
+  &__contact,
+  &__design {
     text-align: center;
   }
 
   &__contact {
     display: grid;
-    text-align: center;
-    row-gap: 2em;
   }
 
   // Media queries
@@ -84,6 +103,7 @@
   @include breakPoints("small") {
     &__about,
     &__makingOff,
+    &__photograph,
     &__contact {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -91,8 +111,24 @@
     &__image {
       height: 100%;
     }
+
     .image-order {
       order: -1;
+    }
+
+    .paragraph-columns {
+      columns: 2;
+      column-gap: 1em;
+    }
+
+    .c-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+
+  @include breakPoints("medium") {
+    &__photograph {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

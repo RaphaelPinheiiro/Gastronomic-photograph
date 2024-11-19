@@ -1,3 +1,4 @@
+@use "../abstract" as *;
 @use "../tools" as *;
 
 // Layout Header
@@ -28,11 +29,23 @@
     gap: 1em;
   }
 
+  .c-social {
+    display: none;
+  }
+
   // Media queries
 
   @include breakPoints("small") {
     &__explorer {
       display: flex;
+    }
+
+    .c-social {
+      display: flex;
+    }
+
+    .l-wrapper-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
