@@ -16,11 +16,16 @@
   min-height: 100vh;
 
   &__title {
+    text-align: left;
     padding: 2em 0;
   }
 
   .subtitle-fs {
     font-size: clamp(1.383rem, 4vw + 1rem, 5rem);
+  }
+
+  &__intro {
+    grid-column: 1 / -1;
   }
 
   &__explorer {
@@ -29,23 +34,27 @@
     gap: 1em;
   }
 
-  .c-social {
+  .c-nav--hidden,
+  .explorer--hidden,
+  .c-social--hidden {
     display: none;
   }
 
   // Media queries
 
   @include breakPoints("small") {
-    &__explorer {
+    .c-nav--hidden,
+    .explorer--hidden,
+    .c-social--hidden {
       display: flex;
     }
 
-    .c-social {
-      display: flex;
+    .c-buttonmenu {
+      display: none;
     }
 
-    .l-wrapper-grid {
-      grid-template-columns: repeat(2, 1fr);
+    &__intro {
+      grid-column: 2 / -1;
     }
   }
 }

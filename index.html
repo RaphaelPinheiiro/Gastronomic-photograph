@@ -11,12 +11,20 @@
 <body>
   <div class="l-container">
     <header class="l-header">
-      <div class="l-wrapper l-wrapper-flex">
+      <div class="l-wrapper l-wrapper-grid">
         <h1 class="l-header__title">Luciano Fagner</h1>
-        <button class="c-buttonmenu open-menu">&#9776</button>
+        <nav class="c-nav c-nav--hidden">
+          <menu class="c-nav__menu">
+            <li class="c-nav__item"><a href="#" class="c-nav__link">Início</a></li>
+            <li class="c-nav__item"><a href="#" class="c-nav__link">About me</a></li>
+            <li class="c-nav__item"><a href="#" class="c-nav__link">Photograph</a></li>
+            <li class="c-nav__item"><a href="#" class="c-nav__link">Contact us</a></li>
+          </menu>
+        </nav>
+        <button class="c-buttonmenu c-buttonmenu--hidden js-open-menu">&#9776</button>
       </div>
       <div class="l-wrapper l-wrapper-grid">
-        <ul class="c-social">
+        <ul class="c-social c-social--hidden">
           <li class="c-social__item"><a href="#" class="c-social__link"><svg class="c-social__icon"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
@@ -42,8 +50,8 @@
           <a class="c-button" href="#">Button</a>
         </article>
       </div>
-      <div class="l-wrapper">
-        <aside class="l-header__explorer">
+      <div class="l-wrapper ">
+        <aside class="l-header__explorer explorer--hidden">
           <article class="l-header__card">
             <h3 class="l-header__subtitle">Making off</h3>
             <p class="l-header__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -59,13 +67,13 @@
         </aside>
       </div>
     </header>
-    <nav class="c-nav">
-      <button class="c-buttonmenu close-menu">&times;</button>
-      <menu class="c-nav__menu">
-        <li class="c-nav__item"><a href="#" class="c-nav__link">Inicio</a></li>
-        <li class="c-nav__item"><a href="#" class="c-nav__link">About me</a></li>
-        <li class="c-nav__item"><a href="#" class="c-nav__link">Photograph</a></li>
-        <li class="c-nav__item"><a href="#" class="c-nav__link">Contact us</a></li>
+    <nav class="c-navmobile js-nav">
+      <button class="c-buttonmenu js-close-menu">&times;</button>
+      <menu class="c-navmobile__menu">
+        <li class="c-navmobile__item"><a href="#" class="c-navmobile__link">Inicio</a></li>
+        <li class="c-navmobile__item"><a href="#" class="c-navmobile__link">About me</a></li>
+        <li class="c-navmobile__item"><a href="#" class="c-navmobile__link">Photograph</a></li>
+        <li class="c-navmobile__item"><a href="#" class="c-navmobile__link">Contact us</a></li>
       </menu>
     </nav>
     <main class="l-main">

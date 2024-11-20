@@ -1,7 +1,7 @@
-const OPENBUTTON = document.querySelector(".open-menu");
-const CLOSEBUTTON = document.querySelector(".close-menu");
+const OPENBUTTON = document.querySelector(".js-open-menu");
+const CLOSEBUTTON = document.querySelector(".js-close-menu");
 const BODY = document.querySelector("body");
-const NAV = document.querySelector(".c-nav");
+const NAV = document.querySelector(".js-nav");
 
 OPENBUTTON.addEventListener("click", () => {
   NAV.classList.add("nav-open");
@@ -12,5 +12,3 @@ CLOSEBUTTON.addEventListener("click", () => {
   NAV.classList.remove("nav-open");
   BODY.classList.remove("no-scroll");
 });
-
-console.log(NAV);

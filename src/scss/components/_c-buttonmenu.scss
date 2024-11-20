@@ -10,6 +10,8 @@
   color: inherit;
   font-size: 2rem;
   padding: 0.1em;
+  justify-self: end;
+  align-self: center;
   transition: $transition-global;
 
   &:hover,

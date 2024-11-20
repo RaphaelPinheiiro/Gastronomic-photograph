@@ -7,12 +7,7 @@
   width: 100%;
 }
 
-.l-wrapper-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .l-wrapper-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
