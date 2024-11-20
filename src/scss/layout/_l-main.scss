@@ -127,8 +127,5 @@
   }
 
   @include breakPoints("medium") {
-    &__photograph {
-      grid-template-columns: repeat(3, 1fr);
-    }
   }
 }

@@ -18,19 +18,13 @@
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.35em;
+    outline: none;
   }
 
   &__icon {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    fill: currentColor;
-    color: var(--clr-light-100);
-    transition: $transition-global;
-
-    &:hover,
-    &:focus {
-      color: var(--clr-dark-700);
-    }
+    fill: var(--clr-light-100);
   }
 }
